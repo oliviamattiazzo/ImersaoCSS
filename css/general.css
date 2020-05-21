@@ -68,17 +68,72 @@ a:hover {
 .site-title {
     color: lavender;
     text-align: center;
+    font-family: 'Reenie Beanie', cursive;
 }
 
 .site-title {
-    font-size: 4em;
+    font-size: 8em;
 }
 
 .site-subtitle {
+    font-size: 4em;
     font-style: italic;
+    line-height: 1.8em;
+}
+
+.competencias {
+    padding: 1.5em;
+    height: 100vh;
+}
+
+.competencias h2 {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 3em;
+    color: lavender;
+    margin-bottom: 0.3em;
+}
+
+.competencias .grid {
+    display: grid;
+    color: ghostwhite;
+    gap: 1em;
+}
+
+@media (min-width: 560px) {
+    .competencias .grid {
+        grid-template-columns: repeat(2, 180px);
+    }
+}
+
+@media (min-width: 880px) {
+    .competencias .grid {
+        grid-template-columns: repeat(3, 180px);
+        justify-content: center;
+        align-content: center;
+        height: calc(100vh - 48px - 8em);
+    }
+}
+
+@media (min-width: 1200px) {
+    .competencias .grid {
+        grid-template-columns: repeat(4, 180px);
+        justify-content: center;
+    }
+}
+
+.competencias figure {
+    text-align: center;
 }
 
 .img-competencias {
     height: 180px;
     width: 180px;
+    object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+    .img-competencias {
+        height: 10em;
+        width: auto;
+    }
 }
