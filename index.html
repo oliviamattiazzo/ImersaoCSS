@@ -6,43 +6,106 @@
     <title>Olivia Mattiazzo</title>
     <link rel="stylesheet" type="text/css" href="css/general.css" />
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/293847d6a2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Competências</a></li>
-                <li><a href="#">Experiência profissional</a></li>
-                <li><a href="#">Contato</a></li>
+            <ul class="container">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#competencias">Competências</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <li><a href="resumos.html">Resumos #ImersaoCSS</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="titulo">
           <h1 class="site-title">Olivia Mattiazzo</h1>
           <h2 class="site-subtitle">.NET Developer</h2>
         </div>
     </header>
-    <section class="competencias">
+    <section class="sobre container">
+      <h2>Sobre</h2>
+      <figure>
+        <img src="img/olivia.jpg" alt="Olivia Mattiazzo" class="avatar">
+      </figure>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi ad explicabo voluptatum similique voluptatem nihil neque, sequi magni vero animi vel nobis ratione repudiandae, natus non culpa. Deserunt, illo!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsa unde molestiae praesentium corporis rerum, debitis explicabo, expedita laudantium fuga dignissimos quibusdam eaque est asperiores ab modi? Neque, voluptatem veritatis?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit adipisci delectus numquam reiciendis similique hic. Quod id delectus dolor sit, quaerat molestias molestiae consectetur laborum praesentium? Fugit labore harum accusamus.</p>
+      <p>Esse site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS</a>  da Alura (: </p>
+      
+    </section>
+    <section class="competencias container" id="competencias">
         <h2>Competências</h2>
         <div class="grid">
-          <figure>
-            <img class="img-competencias" src="img/notebook.png" alt=".NET Framework / C#">
-            <figcaption>.NET Framework / C#</figcaption>
-          </figure>
-          <figure>
-            <img class="img-competencias" src="img/server.png" alt="PL/SQL">
-            <figcaption>PL/SQL</figcaption>
-          </figure>
-          <figure>
-            <img class="img-competencias" src="img/browser.png" alt="Javascript">
-            <figcaption>Javascript</figcaption>
-          </figure>
-          <figure>
-            <img class="img-competencias" src="img/idiomas.png" alt="Português, inglês e espanhol">
-            <figcaption>Português, inglês e espanhol</figcaption>
-          </figure>
+          <div class="flipcard">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-competencias" src="img/notebook.png" alt=".NET Framework / C#">
+                <figcaption>.NET Framework / C#</figcaption>
+              </figure>
+              <div class="card-back">
+                Parte de trás de .NET Framework
+              </div>
+            </div>
+          </div>
+
+          <div class="flipcard">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-competencias" src="img/server.png" alt="PL/SQL">
+                <figcaption>PL/SQL</figcaption>
+              </figure>
+              <div class="card-back">
+                Parte de trás de PL/SQL
+              </div>
+            </div>
+          </div>
+
+          <div class="flipcard">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-competencias" src="img/browser.png" alt="Javascript">
+                <figcaption>Javascript</figcaption>
+              </figure>
+              <div class="card-back">
+                Parte de trás de Javascript
+              </div>
+            </div>
+          </div>
+
+          <div class="flipcard">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-competencias" src="img/idiomas.png" alt="Português, inglês e espanhol">
+                <figcaption>Português, inglês e espanhol</figcaption>
+              </figure>
+              <div class="card-back">
+                Parte de trás de idiomas
+              </div>
+            </div>
+          </div>
         </div>
+    </section>
+    <section class="contato container" id="contato">
+      <h2>Contato</h2>
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/oliviamattiazzo">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/ohtheskywalkers">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/olivia-pachele-mattiazzo-433a8711b/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/olivia-pachele-mattiazzo-433a8711b/">
+          <i class="fab fa-wordpress"></i>
+        </a>
+        <a target="_blank" href="https://oliviamattiazzo.wordpress.com/">
+          <i class="fas fa-envelope-open-text"></i>
+        </a>
+      </div>
     </section>
 </body>
 </html>

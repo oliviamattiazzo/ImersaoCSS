@@ -38,6 +38,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
 }
 
 .menu ul {
@@ -52,6 +53,23 @@ header {
 .menu a {
     display: block;
     padding: 10px 20px;
+    transition: background, color, 0.5s;
+}
+
+.menu a:hover {
+    background: ghostwhite;
+    color: #315885;
+}
+
+.titulo {
+    opacity: 0;
+    animation: linear 1s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    100% {
+        opacity: 1;
+    }
 }
 
 a {
@@ -59,9 +77,13 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    /*text-decoration: underline;*/
-    background-color: #35478F;
+p a {
+    color: MediumPurple;
+}
+
+p a:hover {
+    background-color: MediumPurple;
+    color: lavender;
 }
 
 .site-subtitle,
@@ -81,11 +103,23 @@ a:hover {
     line-height: 1.8em;
 }
 
+.sobre,
+.contato,
 .competencias {
     padding: 1.5em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
+
+.sobre h2,
+.contato h2,
 .competencias h2 {
     font-family: 'Patrick Hand SC', cursive;
     font-size: 3em;
@@ -93,31 +127,40 @@ a:hover {
     margin-bottom: 0.3em;
 }
 
+.sobre p {
+    color: ghostwhite;
+    margin-bottom: 1.4em;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+.sobre .avatar {
+    border-radius: 10px;
+    float: right;
+    margin-left: 1em;
+    width: 500px;
+}
+
 .competencias .grid {
     display: grid;
     color: ghostwhite;
-    gap: 1em;
+    gap: 3em;
 }
 
 @media (min-width: 560px) {
     .competencias .grid {
         grid-template-columns: repeat(2, 180px);
+        justify-content: center;
+        align-content: center;
+        height: calc(100vh - 10em - 180px);
     }
 }
 
 @media (min-width: 880px) {
     .competencias .grid {
-        grid-template-columns: repeat(3, 180px);
-        justify-content: center;
-        align-content: center;
-        height: calc(100vh - 48px - 8em);
-    }
-}
-
-@media (min-width: 1200px) {
-    .competencias .grid {
         grid-template-columns: repeat(4, 180px);
         justify-content: center;
+        align-content: center;
     }
 }
 
@@ -127,13 +170,63 @@ a:hover {
 
 .img-competencias {
     height: 180px;
-    width: 180px;
+    width: 100%;
     object-fit: cover;
+    transition: transform 500ms;
 }
+
+/*.img-competencias:hover {
+    transform: scale(1.2);
+}*/
 
 @media (min-width: 1200px) {
     .img-competencias {
         height: 10em;
         width: auto;
     }
+}
+
+.flipcard {
+    height: 180px;
+    perspective: 1000px;
+}
+
+.flipcard:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.card-back {
+    height: 180px;
+    transform: rotateY(180deg);
+    width: 100%;
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato a {
+    color: ghostwhite;
+    font-size: 7em;
+    transition: text-shadow, 0.5s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-shadow: 0px 0px 50px rgba(145, 141, 196, 0.8);
 }
