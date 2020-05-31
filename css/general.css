@@ -173,7 +173,8 @@ a {
 
 .sobre h2,
 .carreira h2,
-.projetos h2 {
+.projetos h2,
+.conquistas h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 3em;
     color: lavender;
@@ -183,7 +184,8 @@ a {
 
 .sobre,
 .carreira,
-.projetos {
+.projetos,
+.conquistas {
     padding: 1.5em;
     min-height: 100vh;
 }
@@ -504,4 +506,111 @@ p a:hover {
 .conteudo-card-carreira a {
     color: #373277;
     font-weight: bold;
+}
+
+.conteudo-card-carreira i {
+    color: MidnightBlue;
+}
+
+.projetos-academicos h3 {
+    background-color: midnightblue;
+    color: ghostwhite;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+    text-indent: 0.5em;
+    width: calc(2*257px + 2em);
+}
+
+.projetos-pessoais h3 {
+    background-color: midnightblue;
+    color: ghostwhite;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+    text-indent: 0.5em;
+    width: calc(3*257px + 1.7*2em);
+}
+
+.grid-projetos-academicos,
+.grid-projetos-pessoais {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3, 257px);
+    margin-bottom: 2em;
+}
+
+.grid-projetos-academicos figcaption,
+.grid-projetos-pessoais figcaption {
+    color: ghostwhite;
+    text-align: center;
+}
+
+.flip-card {
+    height: 180px;
+    max-width: 257px;
+    perspective: 1000px;
+}
+
+.flip-card:hover .card-projetos {
+    transform: rotateY(180deg);
+}
+
+.card-projetos {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+}
+
+.card-front, 
+.card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.card-back {
+    display: flex;
+    background-color: rgba(107, 132, 232, .7);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.card-back h3 {
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-indent: 0;
+    width: 237px;
+}
+
+.card-back h4 {
+    margin: 10px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.card-back .link-github {
+    text-align: center;
+}
+
+.card-back .link-github a:hover {
+    background-color: midnightblue;
+}
+
+.img-projetos {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
+}
+
+.redimensiona-img {
+    object-position: 50%;
+}
+
+.projetos-pessoais {
+    margin-left: 290px;
 }
