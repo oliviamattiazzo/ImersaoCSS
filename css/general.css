@@ -232,7 +232,6 @@ p a:hover {
     border-radius: 10px;
     float: right;
     margin-left: 1em;
-    
 }
 
 @media (min-width: 375px) {
@@ -512,30 +511,30 @@ p a:hover {
     color: MidnightBlue;
 }
 
-.projetos-academicos h3 {
+.projetos h3 {
     background-color: midnightblue;
     color: ghostwhite;
     font-size: 1.5em;
     margin-bottom: 0.3em;
     text-indent: 0.5em;
-    width: calc(2*257px + 2em);
+    text-align: center;
+    width: calc(4*257px + 2.2*2em);
 }
 
-.projetos-pessoais h3 {
-    background-color: midnightblue;
-    color: ghostwhite;
-    font-size: 1.5em;
-    margin-bottom: 0.3em;
-    text-indent: 0.5em;
-    width: calc(3*257px + 1.7*2em);
+.projetos-academicos {
+    margin-top: 5em;
 }
 
 .grid-projetos-academicos,
 .grid-projetos-pessoais {
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(3, 257px);
-    margin-bottom: 2em;
+    grid-template-columns: repeat(4, 257px);
+    margin-bottom: 5em;
+}
+
+.grid-projetos-academicos {
+    margin-left: calc(257px + 2em); 
 }
 
 .grid-projetos-academicos figcaption,
@@ -591,11 +590,13 @@ p a:hover {
     text-align: justify;
 }
 
-.card-back .link-github {
+.card-back .link-github,
+.card-back .link-instagram {
     text-align: center;
 }
 
-.card-back .link-github a:hover {
+.card-back .link-github a:hover,
+.card-back .link-instagram a:hover {
     background-color: midnightblue;
 }
 
@@ -609,8 +610,4 @@ p a:hover {
 
 .redimensiona-img {
     object-position: 50%;
-}
-
-.projetos-pessoais {
-    margin-left: 290px;
 }
