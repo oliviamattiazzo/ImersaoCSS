@@ -23,7 +23,11 @@ This website is published at [this link](https://oliviamattiazzo.github.io/Imers
 Hi there! My name is Olivia. I'm a web developer, focused on Microsoft technologies (.NET/C# are my favorites). I'm also more a backend girl than everything; I do not have a sharp aesthetic sense, even though this project is great and I'm really proud of it! :sparkles:
 
 Feel free to contact me with any questions, tips or feedbacks about this project. I'll be happy to hear and to reply!
+
 :envelope: Email: oli.pmatt@gmail.com
+
 :globe_with_meridians: Blog: [oliviamattiazzo.com.br](http://oliviamattiazzo.com.br/)
+
 :iphone: [Linkedin](https://www.linkedin.com/in/olivia-pachele-mattiazzo-433a8711b/)
+
 :hatched_chick: Twitter: @ohtheskywalkers
