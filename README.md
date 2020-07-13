@@ -28,6 +28,6 @@ Feel free to contact me with any questions, tips or feedbacks about this project
 
 :globe_with_meridians: Blog: [oliviamattiazzo.com.br](http://oliviamattiazzo.com.br/)
 
-:hatched_chick: Twitter: @oliviamattiazzo
+:hatched_chick: Twitter: [@oliviamattiazzo](https://twitter.com/oliviamattiazzo)
 
 :iphone: [Linkedin](https://www.linkedin.com/in/olivia-pachele-mattiazzo-433a8711b/)
