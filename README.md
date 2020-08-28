@@ -26,7 +26,7 @@ Feel free to contact me with any questions, tips or feedbacks about this project
 
 :envelope: Email: oli.pmatt@gmail.com
 
-:globe_with_meridians: Blog: [oliviamattiazzo.com.br](http://oliviamattiazzo.com.br/)
+:globe_with_meridians: Blog: [oliviamattiazzo.dev](http://oliviamattiazzo.dev/)
 
 :hatched_chick: Twitter: [@oliviamattiazzo](https://twitter.com/oliviamattiazzo)
 
