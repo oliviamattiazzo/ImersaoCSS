@@ -30,4 +30,4 @@ Feel free to contact me with any questions, tips or feedbacks about this project
 
 :hatched_chick: Twitter: [@oliviamattiazzo](https://twitter.com/oliviamattiazzo)
 
-:iphone: [Linkedin](https://www.linkedin.com/in/olivia-pachele-mattiazzo-433a8711b/)
+:iphone: [Linkedin](https://www.linkedin.com/in/oliviamattiazzo/)
